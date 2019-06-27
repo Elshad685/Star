@@ -18,8 +18,11 @@
       */
      public static void main(String[] args) {
          // TODO code application logic here
-         Ters(7);
-         Duz(7);
+         Scanner scan=new Scanner(System.in);
+         System.out.println("Ədədi daxil edin :");
+         int a=scan.nextInt();
+         Ters(a);
+         Duz(a);
      }
 
      public static void Duz(int a) {
