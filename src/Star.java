@@ -18,11 +18,25 @@
       */
      public static void main(String[] args) {
          // TODO code application logic here
-         Scanner scan=new Scanner(System.in);
-         System.out.println("Ədədi daxil edin :");
-         int a=scan.nextInt();
-         Ters(a);
-         Duz(a);
+        // Scanner scan=new Scanner(System.in);
+        // System.out.println("Ədədi daxil edin :");
+        // int a=scan.nextInt();
+        // Ters(a);
+        // Duz(a);
+         String secim = "";
+         Scanner scan = new Scanner(System.in);
+         System.out.println("Ədədi daxil edin: ");
+         int say = scan.nextInt();
+         System.out.println("Simvolu daxil edin");
+         String simvol = scan.next();
+         System.out.println("Ardicil isə Ard  ,AltAlta isə Alt yazın:");
+         secim = scan.next();
+
+         if (secim.equals("Ard")) {
+             Ardicil(say, simvol);
+         } else if (secim.equals("Alt")) {
+             Altalta(say, simvol);
+         }
      }
 
      public static void Duz(int a) {
@@ -47,5 +61,15 @@
          }
 
      }
+     public static void Ardicil(int a, String b) {
+         for (int i = 0; i < a; i++) {
+             System.out.print(b);
+         }
+     }
+     public static void Altalta(int a, String b) {
+         for (int i = 0; i < a; i++) {
+             System.out.println(b);
+         }
 
+     }
  }
